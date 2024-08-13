@@ -3,9 +3,44 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34902.65
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8817EE4C-FB98-4E98-95FA-0EF312AC167A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CatalogService", "CatalogService", "{F5791E0D-51A5-4E83-8B2F-2C9E055D9738}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{2E2B5960-388B-4C35-B986-F561C5307989}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{B513B468-8A6B-449A-8168-F271DF4D1143}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{8237505D-2A91-419B-8933-9248D20B7883}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{6903FFAD-9FAE-466A-8551-7AFE9FACAC67}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{87815374-4145-447B-8A2D-F1BFC75C12E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog.Domain", "Catalog.Domain\Catalog.Domain.csproj", "{AFC29A6E-E241-4F23-A81B-C3B6ABFF3652}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AFC29A6E-E241-4F23-A81B-C3B6ABFF3652}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFC29A6E-E241-4F23-A81B-C3B6ABFF3652}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFC29A6E-E241-4F23-A81B-C3B6ABFF3652}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFC29A6E-E241-4F23-A81B-C3B6ABFF3652}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F5791E0D-51A5-4E83-8B2F-2C9E055D9738} = {6903FFAD-9FAE-466A-8551-7AFE9FACAC67}
+		{2E2B5960-388B-4C35-B986-F561C5307989} = {F5791E0D-51A5-4E83-8B2F-2C9E055D9738}
+		{B513B468-8A6B-449A-8168-F271DF4D1143} = {F5791E0D-51A5-4E83-8B2F-2C9E055D9738}
+		{8237505D-2A91-419B-8933-9248D20B7883} = {F5791E0D-51A5-4E83-8B2F-2C9E055D9738}
+		{6903FFAD-9FAE-466A-8551-7AFE9FACAC67} = {8817EE4C-FB98-4E98-95FA-0EF312AC167A}
+		{87815374-4145-447B-8A2D-F1BFC75C12E7} = {8817EE4C-FB98-4E98-95FA-0EF312AC167A}
+		{AFC29A6E-E241-4F23-A81B-C3B6ABFF3652} = {2E2B5960-388B-4C35-B986-F561C5307989}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DBA7FCE7-2084-4328-857B-783B20E456D9}
