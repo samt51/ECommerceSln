@@ -1,1 +1,3 @@
 -->CatalogApi http://localhost:5051
+-->IdentityServer http://localhost:5001
+-->PhotoStock API http://localhost:5012

@@ -5,7 +5,7 @@
         public T Data { get; set; }
         public int StatusCode { get; set; }
         public bool IsSuccess { get; set; }
-        public List<string> ErrorMessage { get; set; }
+        public List<string> ErrorMessage { get; set; } = new List<string>();
 
         public static ResponseDto<T> Success()
         {
@@ -20,6 +20,12 @@
         public static ResponseDto<T> Fail(List<string> errors)
         {
             return new ResponseDto<T> { ErrorMessage = errors, IsSuccess = false, StatusCode = 400 };
+        }
+        public static ResponseDto<T> Fail(string error)
+        {
+            var err = new List<string>();
+            err.Add(error);
+            return new ResponseDto<T> { ErrorMessage = err, IsSuccess = false, StatusCode = 400 };
         }
     }
 }

@@ -1,8 +1,6 @@
 ﻿using CatalogService.Application.Abstract.Categoria;
- 
 using ECommerce.Shared.Dtos;
 using ECommerce.Shared.Dtos.CatalogServiceDtos.CategoryDto;
-using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CatalogService.Api.Controllers.Categoria
