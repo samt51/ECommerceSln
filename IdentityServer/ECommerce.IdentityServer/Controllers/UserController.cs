@@ -2,14 +2,16 @@
 using System.Threading.Tasks;
 using ECommerce.IdentityServer.Dtos;
 using ECommerce.IdentityServer.Models;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using ECommerce.Shared.AllShared.Interfaces.Mapper;
 using ECommerce.Shared.Dtos;
+using IdentityServer4;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ECommerce.IdentityServer.Controllers
 {
+    [Authorize(IdentityServerConstants.LocalApi.PolicyName)]
     [Route("api/[controller]/[action]")]
     [ApiController]
     public class UserController : ControllerBase
